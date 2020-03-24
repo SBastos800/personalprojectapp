@@ -1,0 +1,32 @@
+.google {
+    display: flex;
+    border: 2px solid pink;
+    justify-content: center;
+    align-items: flex-start;
+    width: 1020px;
+    padding-top: 50px;
+    height: 100%;
+    background-color: #313131;
+   
+    
+  
+
+    button {
+        background-color:grey;
+        color: white;
+        border: 2px solid whitesmoke;
+        padding: 5px 20px 5px 20px;
+        text-align: right;
+        border-radius: 15px;
+        font-size: 20px;
+        transition: 0.5s;
+        outline: none;
+
+        &:hover {
+            cursor: pointer;
+            transition: 0.5s;
+            box-shadow: 10px 10px 10px rgba(0,0,0, 0.5);
+          }
+        
+    }
+}

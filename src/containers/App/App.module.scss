@@ -1,0 +1,29 @@
+* {
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  border: 2px solid blue;
+  height: 500vh;
+  width: 100%;
+  display: flex;
+  // flex-direction: column;
+  justify-content: flex-start;
+  background-color: #313131;
+  transition: 0.5s;
+
+  a {
+    text-decoration: none;
+    color: whitesmoke;
+   border-radius: 10px;
+
+    &:hover {
+      transition: 0.5s;
+      box-shadow: 10px 10px 10px rgba(0,0,0, 0.5);
+  }
+  }
+  
+  
+}

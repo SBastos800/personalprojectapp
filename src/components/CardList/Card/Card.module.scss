@@ -1,0 +1,35 @@
+.cardWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // border: 9px solid grey;
+    height: 350px;
+    width: 30%;
+    border-radius: 10px;
+    color: whitesmoke;
+    background-color: #242424;
+    transition: 0.5s;
+    margin: 40px;
+
+    h3, p {
+        margin: 0;
+    }
+
+    &:hover {
+        transition: 0.5s;
+        box-shadow: 10px 10px 10px rgba(0,0,0, 0.5);
+    }
+
+    img {
+        height: 40%;
+        width: 45%;
+    }
+    // div {
+    //     text-align: center;
+        
+    // }
+    
+
+
+}
