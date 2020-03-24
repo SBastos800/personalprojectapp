@@ -11,7 +11,8 @@ export default class NavBar extends Component  {
                 <ul className={styles.navList}>
                     <NavItem route="/login" name="Login" /> 
                     <NavItem route="/cards" name="Cards" />
-                    <NavItem route="/private/catfactslist" name="Facts" />
+                    <NavItem route="/private/catfactslist" name="Cat Facts" />
+                    <NavItem route="/private/createcatcard" name="Create Cat Card" />
                 </ul>
             </nav>
         )

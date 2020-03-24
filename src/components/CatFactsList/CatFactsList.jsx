@@ -29,6 +29,9 @@ export default class CatFactsList extends Component {
                 <section className={styles.listWrapper} >
                      <Facts random={this.state.all[randomFact]} />
                 </section>
+                <section className={styles.buttonWrapper} onClick={this.props.signOut}>
+                    <button>Sign out</button>
+                </section>
             </section>
         );
     }

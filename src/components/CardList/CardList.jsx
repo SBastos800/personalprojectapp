@@ -49,7 +49,7 @@ export default class CardList extends Component {
                         <h1>Astrology Cards</h1>
                     </div>
                     <SearchBar searchText={this.state.searchText} setSearchText={this.setSearchText} />
-                    <section class={styles.cardList}>
+                    <section className={styles.cardList}>
                         {this.state.filteredCards.map((person, index) => (
                             <Card cardData={person} key={index} />
                         ))}

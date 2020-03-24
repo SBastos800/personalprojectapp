@@ -5,6 +5,7 @@ import firebase, { providers } from "../firebase";
 import Login from "../components/Login";
 import CatFactsList from "../components/CatFactsList";
 import PrivateRoutes from "../routes/PrivateRoutes";
+import CreateCatCard from "../components/CreateCatCard";
 
 
 const NotFound = () => (<h2>Oops, page not found</h2>);
@@ -26,6 +27,18 @@ export default class Routes extends Component {
             console.log(error);
         })
     }
+
+    signOut = () => {
+        firebase
+            .auth()
+            .signOut()
+            .then(() => {
+                this.setState({user: null});
+                globalHistory.navigate("/login");
+            })
+    }
+
+
     render() {
         console.log(this.state.user)
         return(
@@ -34,8 +47,9 @@ export default class Routes extends Component {
                 <Login path="login" signIn={this.signIn} />
                 <CardList path="cards" />
                 <PrivateRoutes path="private" user={this.state.user}>
-                    <CatFactsList path="catfactslist" user={this.state.user} />
+                    <CatFactsList path="catfactslist" user={this.state.user} signOut={this.signOut} />
                 </PrivateRoutes>
+                <CreateCatCard path="private/createcatcard" user={this.state.user} />
                 
                 <NotFound default />
             </Router>
