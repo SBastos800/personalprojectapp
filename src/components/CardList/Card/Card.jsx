@@ -11,7 +11,7 @@ export default class Card extends Component {
                 />
                   <h3>Name: {this.props.cardData.name}</h3>
                   <p>Description: {this.props.cardData.description}</p>
-                  <p>Dates: {this.props.cardData.dates}</p>  
+                  <p>Location: {this.props.cardData.location}</p>  
                 <Skills className={styles.skillsCss} skills={this.props.cardData.skills} /> 
             </section>
         );

@@ -6,7 +6,7 @@ export default class SearchBar extends Component {
         return(
             <input
                 className={styles.searchBar} 
-                placeholder="Search your astrology card here..."
+                placeholder="Search your cat..."
                 value={this.props.searchText}
                 onChange={this.props.setSearchText}
             />

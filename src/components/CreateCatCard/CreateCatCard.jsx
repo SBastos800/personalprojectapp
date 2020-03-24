@@ -43,9 +43,12 @@ export default class CreateCatCard extends Component {
     handleSubmit = (event) => {
         event.preventDefault();
         firestore
-            .collection("users")
+            .collection("mycatcards")
             // .add(this.props.user.uid)    // set the ID of our document, use the same id of the authentication
-            .add(this.state.formData)
+            .add({
+                ...this.state.formData,
+                myCreation: this.props.user.uid
+            })
             .then(() => {
                 console.log("It Worked");
             })

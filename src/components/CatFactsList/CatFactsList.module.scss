@@ -1,50 +1,50 @@
-.catFactsListWrapper {
-    display: flex; 
-    flex-direction: column;
-    border: 2px solid green;
-    height: 600px;
-    width: 1000px;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-evenly;
+// .catFactsListWrapper {
+//     display: flex; 
+//     flex-direction: column;
+//     border: 2px solid green;
+//     height: 1000px;
+//     width: 1000px;
+//     flex-wrap: wrap;
+//     align-items: flex-start;
+//     // justify-content: space-evenly;
 
-    h1, p {
-        display: flex;
-        justify-content: center;
-        color: whitesmoke;
-        width: 100%;
-        font-size: 20px;
-    }
+//     h1, p {
+//         display: flex;
+//         justify-content: center;
+//         color: whitesmoke;
+//         width: 100%;
+//         font-size: 20px;
+//     }
 
-    .listWrapper {
-        display: flex;
-        justify-content: center;
-    }
+//     .listWrapper {
+//         display: flex;
+//         justify-content: center;
+//     }
 
-    .buttonWrapper {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+//     .buttonWrapper {
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: center;
     
-        button {
-            background-color:grey;
-            color: white;
-            border: 2px solid whitesmoke;
-            padding: 5px 20px 5px 20px;
-            border-radius: 15px;
-            font-size: 20px;
-            transition: 0.5s;
-            outline: none;
+//         button {
+//             background-color:grey;
+//             color: white;
+//             border: 2px solid whitesmoke;
+//             padding: 5px 20px 5px 20px;
+//             border-radius: 15px;
+//             font-size: 20px;
+//             transition: 0.5s;
+//             outline: none;
     
-            &:hover {
-                cursor: pointer;
-                transition: 0.5s;
-                box-shadow: 10px 10px 10px rgba(0,0,0, 0.5);
-              }
-        }
+//             &:hover {
+//                 cursor: pointer;
+//                 transition: 0.5s;
+//                 box-shadow: 10px 10px 10px rgba(0,0,0, 0.5);
+//               }
+//         }
 
-    }
+//     }
 
     
 
-}
+// }
