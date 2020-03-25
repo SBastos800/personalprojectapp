@@ -1,0 +1,50 @@
+.formWrapper {
+    display: flex; 
+    flex-direction: column;
+    color: whitesmoke;
+    border: 2px solid yellow;
+    height: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    
+   
+   
+    .inputWrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 15px;
+        border: 2px solid green;
+        height: 500px;
+        width: 600px;
+
+        input {
+            padding: 15px;
+            border-radius: 15px;
+            outline: none;
+        }
+
+        .submitButton {
+            background-color:grey;
+            color: white;
+            border: 2px solid whitesmoke;
+            padding: 5px 20px 5px 20px;
+            text-align: center;
+            border-radius: 15px;
+            font-size: 20px;
+            transition: 0.5s;
+            outline: none;
+    
+            &:hover {
+                cursor: pointer;
+                transition: 0.5s;
+                box-shadow: 10px 10px 10px rgba(0,0,0, 0.5);
+              }
+        }
+    }
+
+    
+   
+
+}

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Router, Redirect, globalHistory } from "@reach/router";
+import styles from './router.module.scss';
 import CardList from "../components/CardList";
 import firebase, { providers } from "../firebase";
 import Login from "../components/Login";
@@ -42,7 +43,7 @@ export default class Routes extends Component {
     render() {
         console.log(this.state.user)
         return(
-            <Router>
+            <Router className={styles.container}>
                 <Redirect noThrow from="/" to="cards" />
                 <Login path="login" signIn={this.signIn} />
                 <CardList path="cards" />

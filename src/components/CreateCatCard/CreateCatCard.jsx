@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import styles from "./CreateCatCard.module.scss";
 import { firestore } from "../../firebase";
 import { globalHistory } from "@reach/router";
 
@@ -15,12 +16,12 @@ export default class CreateCatCard extends Component {
     }
 
     componentDidMount() {
-        if(!this.props.user) globalHistory.navigate("login");
-        
+        if (!this.props.user) globalHistory.navigate("login");
+
     }
 
     handleInputChange = (event) => {
-        if(this.state.skills.includes(event.target.name)) {
+        if (this.state.skills.includes(event.target.name)) {
             this.setState({
                 formData: {
                     ...this.state.formData,
@@ -58,58 +59,60 @@ export default class CreateCatCard extends Component {
 
     render() {
         return (
-            <form onSubmit={this.handleSubmit}>
+            <form className={styles.formWrapper} onSubmit={this.handleSubmit}>
                 <h1>Make your own Cat Card!</h1>
-                <input
-                    type="text"
-                    placeholder="Name"
-                    name="name"
-                    value={this.state.formData.name}
-                    onChange={this.handleInputChange}
-                />
-                <input
-                    type="text"
-                    placeholder="Description"
-                    name="description"
-                    value={this.state.formData.description}
-                    onChange={this.handleInputChange}
-                />
-                <input
-                    type="text"
-                    placeholder="Location"
-                    name="location"
-                    value={this.state.formData.location}
-                    onChange={this.handleInputChange}
-                />
-                <input 
-                    type="number"
-                    placeholder="Outgoingness"
-                    name="outgoingness"
-                    value={this.state.formData.outgoingness}
-                    onChange={this.handleInputChange}
+                <section className={styles.inputWrapper}>
+                    <input
+                        type="text"
+                        placeholder="Name"
+                        name="name"
+                        value={this.state.formData.name}
+                        onChange={this.handleInputChange}
                     />
-                 <input 
-                    type="number"
-                    placeholder="Spontaneity"
-                    name="spontaneity"
-                    value={this.state.formData.spontaneity}
-                    onChange={this.handleInputChange}
+                    <input
+                        type="text"
+                        placeholder="Description"
+                        name="description"
+                        value={this.state.formData.description}
+                        onChange={this.handleInputChange}
                     />
-                <input 
-                    type="number"
-                    placeholder="Friendliness"
-                    name="friendliness"
-                    value={this.state.formData.friendliness}
-                    onChange={this.handleInputChange}
+                    <input
+                        type="text"
+                        placeholder="Location"
+                        name="location"
+                        value={this.state.formData.location}
+                        onChange={this.handleInputChange}
                     />
-                 <input 
-                    type="text"
-                    placeholder="My Creation"
-                    name="myCreation"
-                    value={this.state.formData.myCreation}
-                    onChange={this.handleInputChange}
+                    <input
+                        type="number"
+                        placeholder="Outgoingness"
+                        name="outgoingness"
+                        value={this.state.formData.outgoingness}
+                        onChange={this.handleInputChange}
                     />
-                <input type="submit" value="Submit" />
+                    <input
+                        type="number"
+                        placeholder="Spontaneity"
+                        name="spontaneity"
+                        value={this.state.formData.spontaneity}
+                        onChange={this.handleInputChange}
+                    />
+                    <input
+                        type="number"
+                        placeholder="Friendliness"
+                        name="friendliness"
+                        value={this.state.formData.friendliness}
+                        onChange={this.handleInputChange}
+                    />
+                    <input
+                        type="text"
+                        placeholder="My Creation"
+                        name="myCreation"
+                        value={this.state.formData.myCreation}
+                        onChange={this.handleInputChange}
+                    />
+                    <input className={styles.submitButton} type="submit" value="Submit" />
+                </section>
 
             </form>
         );

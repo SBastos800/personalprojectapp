@@ -10,15 +10,15 @@ export default class CatFactsList extends Component {
     state = {
         url: "https://cors-anywhere.herokuapp.com/https://cat-fact.herokuapp.com/facts",
         all: [],
-        myCards: []   
+        myCards: []
     }
 
     componentDidMount() {
         fetch(this.state.url)
-        // .catch(err => {console.log(err)})
-        .then(res => res.json())
-        .then(data => {
-            this.setState({all: data['all']})
+            // .catch(err => {console.log(err)})
+            .then(res => res.json())
+            .then(data => {
+                this.setState({ all: data['all'] })
             })
 
         firestore
@@ -34,27 +34,28 @@ export default class CatFactsList extends Component {
     render() {
         const randomFact = Math.floor(Math.random() * 233)
         console.log(this.state.myCards)
-        return(
-        <>
-            <section className={styles.catFactsListWrapper}>
-                <h1>Cat Facts</h1>
-                <p>Here's your random cat fact!</p>
+        return (
+            <>
+                <section className={styles.catFactsListWrapper}>
+                    <section className={styles.buttonWrapper} onClick={this.props.signOut}>
+                        <button>Sign out</button>
+                    </section>
+                    <h1>Cat Facts</h1>
+                    <p>Here's your random cat fact!</p>
 
-                <section className={styles.listWrapper} >
-                     <Facts random={this.state.all[randomFact]} />
-                </section>
+                    <section className={styles.listWrapper} >
+                        <Facts random={this.state.all[randomFact]} />
+                    </section>
+                    <p>Here's your own Cat Cards!</p>
 
-                <section className={styles.buttonWrapper} onClick={this.props.signOut}>
-                    <button>Sign out</button>
+                    <section className={styles.cardsWrapper}>
+                   
+                        {this.state.myCards.map((person, index) => (
+                            <Card cardData={person} key={index} />
+                        ))}
+                    </section>
                 </section>
-
-                 <section>
-                  {this.state.myCards.map((person, index) => (
-                        <Card cardData={person} key={index} />
-                    ))}
-                </section>
-            </section> 
-        </>
+            </>
         );
     }
 }

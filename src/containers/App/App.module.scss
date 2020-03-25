@@ -17,11 +17,12 @@
   a {
     text-decoration: none;
     color: whitesmoke;
-   border-radius: 10px;
+    border-radius: 10px;
 
     &:hover {
       transition: 0.5s;
       box-shadow: 10px 10px 10px rgba(0,0,0, 0.5);
+      color: green;
   }
   }
   

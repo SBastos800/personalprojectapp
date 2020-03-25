@@ -46,7 +46,7 @@ export default class CardList extends Component {
             <>
                 <section className={styles.cardListWrapper}>
                     <div className={styles.astrologyHeading}>
-                        <h1>Cats Lovers</h1>
+                        <h1>Cat Lovers</h1>
                     </div>
                     <SearchBar searchText={this.state.searchText} setSearchText={this.setSearchText} />
                     <section className={styles.cardList}>
