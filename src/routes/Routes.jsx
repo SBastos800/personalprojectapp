@@ -11,7 +11,6 @@ import CreateCatCard from "../components/CreateCatCard";
 
 const NotFound = () => (<h2>Oops, page not found</h2>);
 
-
 export default class Routes extends Component {
     state = {
         user: null
@@ -39,7 +38,6 @@ export default class Routes extends Component {
             })
     }
 
-
     render() {
         console.log(this.state.user)
         return(
@@ -51,10 +49,8 @@ export default class Routes extends Component {
                     <CatFactsList path="catfactslist" user={this.state.user} signOut={this.signOut} />
                 </PrivateRoutes>
                 <CreateCatCard path="private/createcatcard" user={this.state.user} />
-                
                 <NotFound default />
             </Router>
         );
     }
-
 }

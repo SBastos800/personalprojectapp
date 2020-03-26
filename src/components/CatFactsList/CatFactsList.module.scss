@@ -1,40 +1,51 @@
 .catFactsListWrapper {
-    color: whitesmoke;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    
-     button {
-            background-color:grey;
-            color: white;
-            border: 2px solid whitesmoke;
-            padding: 5px 20px 5px 20px;
-            border-radius: 15px;
-            font-size: 20px;
-            transition: 0.5s;
-            outline: none;
-            margin-top: 15px;
-    
-            &:hover {
-                cursor: pointer;
-                transition: 0.5s;
-                box-shadow: 10px 10px 10px rgba(0,0,0, 0.5);
-              }
-        }
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+//   border: 2px solid violet;
 
-        .listWrapper {
-            display: flex;
-            justify-content: center;
-        }
+    button {
+        background-color: grey;
+        color: white;
+        border: 2px solid whitesmoke;
+        padding: 5px 20px 5px 20px;
+        border-radius: 15px;
+        font-size: 20px;
+        transition: 0.5s;
+        outline: none;
+        margin-top: 15px;
 
-        .cardsWrapper {
-            display: flex; 
-            border: 2px solid yellow;
-            height: 100%;
-            width: 100%;
-            flex-wrap: wrap;
-            align-items: flex-start;
-            justify-content: space-evenly;
+        &:hover {
+        cursor: pointer;
+        transition: 0.5s;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
         }
+    }
+
+    .catFacts {
+        font-size: 45px;
+    }
+
+    .catsPara {
+        padding: 15px 10px 15px 10px;
+        font-size: 20px;
+        margin: 20px 40px 20px 40px;
+    }
+
+    .listWrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    .cardsWrapper {
+        display: flex;
+        // border: 2px solid yellow;
+        height: 100%;
+        width: 100%;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-evenly;
+    }
 }

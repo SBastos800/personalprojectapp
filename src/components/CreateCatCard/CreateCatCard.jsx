@@ -17,7 +17,6 @@ export default class CreateCatCard extends Component {
 
     componentDidMount() {
         if (!this.props.user) globalHistory.navigate("login");
-
     }
 
     handleInputChange = (event) => {
@@ -45,7 +44,6 @@ export default class CreateCatCard extends Component {
         event.preventDefault();
         firestore
             .collection("mycatcards")
-            // .add(this.props.user.uid)    // set the ID of our document, use the same id of the authentication
             .add({
                 ...this.state.formData,
                 myCreation: this.props.user.uid
@@ -54,8 +52,6 @@ export default class CreateCatCard extends Component {
                 console.log("It Worked");
             })
     }
-
-
 
     render() {
         return (
@@ -111,9 +107,11 @@ export default class CreateCatCard extends Component {
                         value={this.state.formData.myCreation}
                         onChange={this.handleInputChange}
                     />
-                    <input className={styles.submitButton} type="submit" value="Submit" />
+                    <div className={styles.submitButtonWrapper}>
+                        <input className={styles.submitButton} type="submit" value="Submit" />
+                    </div>
+                    <p>After filling in the form, press the SUBMIT button once and go back to Cat Facts to see your newly created card!</p>
                 </section>
-
             </form>
         );
     }

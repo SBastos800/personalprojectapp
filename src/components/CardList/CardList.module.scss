@@ -1,6 +1,6 @@
 .cardListWrapper {
     display: flex; 
-    border: 2px solid yellow;
+    // border: 2px solid yellow;
     height: 100%;
     width: 100%;
     flex-wrap: wrap;
@@ -14,12 +14,20 @@
         color: whitesmoke;
         background-color: #242424;
         width: 100%;
-        font-size: 20px;
+
+        .catLovers {
+            font-size: 40px;
+            margin: 20px;
+        }
+    }
+
+    .introToCats {
+        margin: 0 50px 0 50px;
     }
 
     .cardList {
         display: flex;
-        border: 2px solid green;
+        // border: 2px solid green;
         height: 90%;
         width: 1000px;
         flex-wrap: wrap;

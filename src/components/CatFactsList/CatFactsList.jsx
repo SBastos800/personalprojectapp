@@ -40,16 +40,14 @@ export default class CatFactsList extends Component {
                     <section className={styles.buttonWrapper} onClick={this.props.signOut}>
                         <button>Sign out</button>
                     </section>
-                    <h1>Cat Facts</h1>
-                    <p>Here's your random cat fact!</p>
-
+                    <h1 className={styles.catFacts}>Cat Facts</h1>
+                    <p className={styles.catsPara}>Here's your random cat fact! Every time you login, you'll be able to discover a new fact about cats. Enjoy the cats world! </p>
                     <section className={styles.listWrapper} >
                         <Facts random={this.state.all[randomFact]} />
                     </section>
-                    <p>Here's your own Cat Cards!</p>
-
+                    <p className={styles.catsPara}>HERE'S YOUR OWN CAT'S CARDS!</p>
+                    <p className={styles.catsPara}>You can create different cards with your favourite cats and store them here:</p>
                     <section className={styles.cardsWrapper}>
-                   
                         {this.state.myCards.map((person, index) => (
                             <Card cardData={person} key={index} />
                         ))}

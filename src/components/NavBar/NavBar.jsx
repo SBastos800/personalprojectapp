@@ -3,7 +3,6 @@ import styles from "./NavBar.module.scss";
 import NavItem from "./NavItem";
 
 
-
 export default class NavBar extends Component  {
     render() {
         return(
@@ -15,7 +14,7 @@ export default class NavBar extends Component  {
                     <NavItem route="/private/createcatcard" name="Create Cat Card" />
                 </ul>
             </nav>
-        )
+        );
     }
 }
 
