@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import styles from "./CreateCatCard.module.scss";
-import { firestore } from "../../firebase";
+import firebase, { firestore } from "../../firebase";
 import { globalHistory } from "@reach/router";
+import FileUploader from "react-firebase-file-uploader";
+
 
 export default class CreateCatCard extends Component {
     state = {
@@ -10,6 +12,7 @@ export default class CreateCatCard extends Component {
             description: "",
             location: "",
             skills: {},
+            image: "",
             myCreation: ""
         },
         skills: ["outgoingness", "spontaneity", "friendliness"]
@@ -39,6 +42,22 @@ export default class CreateCatCard extends Component {
             })
         }
     }
+
+    handleUploadSuccess = filename => {
+        firebase
+          .storage()
+          .ref("catimage")
+          .child(filename)
+          .getDownloadURL()
+          .then(url =>
+            this.setState({
+              formData: {
+                ...this.state.formData,
+                image: url
+              }
+            })
+          );
+      };
 
     handleSubmit = (event) => {
         event.preventDefault();
@@ -107,6 +126,17 @@ export default class CreateCatCard extends Component {
                         value={this.state.formData.myCreation}
                         onChange={this.handleInputChange}
                     />
+                    <div className={styles.catImage}>
+                    <FileUploader
+                        accept="image/*"
+                        name="catimage"
+                        randomizeFilename
+                        storageRef={firebase.storage().ref("catimage")}
+                        onUploadSuccess={this.handleUploadSuccess}
+                        maxHeight={500}
+                        maxWidth={500}
+                    />
+                    </div>
                     <div className={styles.submitButtonWrapper}>
                         <input className={styles.submitButton} type="submit" value="Submit" />
                     </div>

@@ -20,7 +20,9 @@ export default class CardList extends Component {
 
     filterCards = () => {
         let filteredCards = this.state.users.filter(user => {
-            return user.name.includes(this.state.searchText)
+            return user.name
+            .toUpperCase()
+            .includes(this.state.searchText.toUpperCase());
         })
         this.setState({ filteredCards });
     }
