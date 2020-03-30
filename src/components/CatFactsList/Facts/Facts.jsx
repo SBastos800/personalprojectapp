@@ -3,7 +3,7 @@ import styles from "./Facts.module.scss";
 
 export default class Facts extends Component {
     render() {
-        console.log(this.props.random)
+        // console.log(this.props.random)
         if (this.props.random) {
             return(
                 <section className={styles.factsWrapper}> 

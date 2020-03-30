@@ -2,7 +2,6 @@
     display: flex; 
     flex-direction: column;
     color: whitesmoke;
-    // border: 2px solid yellow;
     height: 100%;
     width: 100%;
     flex-wrap: wrap;
@@ -13,15 +12,13 @@
         flex-direction: column;
         justify-content: space-evenly;
         padding: 15px;
-        // border: 2px solid green;
         height: 600px;
         width: 600px;
 
         input {
             padding: 15px;
             border-radius: 15px;
-            outline: none;
-           
+            outline: none; 
         }
 
         .submitButtonWrapper {

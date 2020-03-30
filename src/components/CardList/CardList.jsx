@@ -17,6 +17,7 @@ export default class CardList extends Component {
         const searchText = event.target.value;
         this.setState({ searchText }, this.filterCards)
     }
+  
 
     filterCards = () => {
         let filteredCards = this.state.users.filter(user => {
@@ -43,6 +44,7 @@ export default class CardList extends Component {
     }
 
     render() {
+        // console.log(this.state.searchText) 
         return (
             <>
                 <section className={styles.cardListWrapper}>
