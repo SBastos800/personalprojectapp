@@ -11,11 +11,15 @@
 
 @media only screen and (max-width: 850px) {
     .navBarWrapper {
+        border: 2px solid blue;
         font-size: 15px;
         text-align: center;
+    
 
         a {
             padding: 0px;
         }
+
+       
     }
 }

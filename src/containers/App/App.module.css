@@ -17,6 +17,7 @@
   background-color: #313131;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  border: 2px dashed purple;
 }
 
 .app a {
@@ -32,5 +33,19 @@
   -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
           box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
   color: green;
+}
+
+@media only screen and (max-width: 920px) {
+  .app {
+    border: 2px solid yellow;
+    height: 1000vh;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .app {
+    border: 2px dashed orange;
+    height: 1000vh;
+  }
 }
 /*# sourceMappingURL=App.module.css.map */
