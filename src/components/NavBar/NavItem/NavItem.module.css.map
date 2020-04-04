@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "NavItem.module.scss"
+    ],
+    "names": [],
+    "file": "NavItem.module.css"
+}

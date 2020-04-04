@@ -8,3 +8,14 @@
     font-size: 20px; 
     padding-top: 45px;
 }
+
+@media only screen and (max-width: 850px) {
+    .navBarWrapper {
+        font-size: 15px;
+        text-align: center;
+
+        a {
+            padding: 0px;
+        }
+    }
+}

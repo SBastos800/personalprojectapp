@@ -18,4 +18,6 @@ const firebaseConfig = {
 
   export const firestore = firebase.firestore();
 
+  export const functions = firebase.functions();
+
   export default firebase;

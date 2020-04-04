@@ -1,0 +1,11 @@
+.searchBar {
+  border: 2px solid whitesmoke;
+  background-color: #242424;
+  width: 625px;
+  height: 50px;
+  border-radius: 30px;
+  outline: none;
+  padding-left: 10px;
+  color: white;
+}
+/*# sourceMappingURL=SearchBar.module.css.map */
