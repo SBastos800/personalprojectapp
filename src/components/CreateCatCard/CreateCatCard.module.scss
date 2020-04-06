@@ -1,5 +1,4 @@
 .formWrapper {
-    // border: 2px solid pink;
     display: flex; 
     flex-direction: column;
     color: whitesmoke;
@@ -9,7 +8,6 @@
     align-items: center;
     
     .inputWrapper {
-        // border: 2px solid green;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -19,14 +17,12 @@
         width: 70%;
 
         input {
-            // border: 2px solid yellow;
             padding: 15px;
             border-radius: 15px;
             outline: none; 
         }
 
         .submitButtonWrapper {
-                // border: 2px solid violet;
                 display: flex;
                 justify-content: center;
 
@@ -40,7 +36,6 @@
                 font-size: 20px;
                 transition: 0.5s;
                 outline: none;
-                // width: 30%;
                 margin-top: 20px;
                
                     &:hover {
@@ -66,7 +61,6 @@
         input {
             width: 90%;
             margin: 1px 1px;
-            // border: 2px solid blue;
         } 
     }
 }

@@ -1,6 +1,5 @@
 .cardListWrapper {
     display: flex; 
-    // border: 2px solid yellow;
     height: 100%;
     width: 100%;
     flex-wrap: wrap;
@@ -27,13 +26,11 @@
 
     .cardList {
         display: flex;
-        // border: 2px solid green;
         height: 90%;
         width: 100%;
         flex-wrap: wrap;
         align-items: flex-start;
-        justify-content: space-evenly;
-        
+        justify-content: space-evenly; 
     }
 }
 

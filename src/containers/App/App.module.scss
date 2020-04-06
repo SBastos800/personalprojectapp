@@ -11,8 +11,7 @@
   justify-content: flex-start;
   background-color: #313131;
   transition: 0.5s;
-  border: 2px dashed purple;
-
+  
     a {
       text-decoration: none;
       color: whitesmoke;
@@ -30,19 +29,17 @@
 
 @media only screen and (max-width: 920px) {
 
-  .app {
-    border: 2px solid yellow;    
+  .app {   
     height: 1000vh;
   }
 }
 
 
 @media only screen and (max-width: 768px) {
-.app {
-  border: 2px dashed orange;
-  height: 1000vh;
-}
-  
+
+  .app {
+    height: 1000vh;
+  }
 }
 
 
