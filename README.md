@@ -1,7 +1,7 @@
 # PersonalProjectApp
 ## Cat's React App
 
-This is my personal react app created towards the end of the nology course. In this React app I used firebase back-end that incorporated react routing, state and proprs. I also included a firebase authentication system and it's also connected to an API that returns information to the user about cat facts.
+This is my personal react app created towards the end of the nology course. In this React app I used firebase back-end that incorporated react routing, state and props. I also included a firebase authentication system and it's also connected to an API that returns information to the user about cat facts.
 
 ## How to use
 You can clone this repo down and then do 'yarn install' in the terminal for all of the related packages to be installed. Then, you can do a 'yarn start' to view in the browser.
