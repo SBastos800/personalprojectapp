@@ -6,7 +6,7 @@ This is my personal react app created towards the end of the nology course. In t
 ## How to use
 You can clone this repo down and then do 'yarn install' in the terminal for all of the related packages to be installed. Then, you can do a 'yarn start' to view in the browser.
 
-The landing page is accessible to the public. If you login, you will have access to the create cards where you can fill in with your own information and upload a picture. You'll be able to see your card in cat facts. Every time you log in you'll have access to a knew Cat Fact. 
+The landing page is accessible to the public. If you login, you will have access to the create cards where you can fill in with your own information and upload a picture. You'll be able to see your card in cat facts. Every time you log in you'll have access to a new Cat Fact. 
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
